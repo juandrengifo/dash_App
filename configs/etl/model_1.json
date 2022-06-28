@@ -1,0 +1,81 @@
+{
+    "connection_string" : "DefaultEndpointsProtocol=https;AccountName=devaimlstgacc;AccountKey=ygVXw+tz/YwUsEZaUhyLTUic9c+gALo/KS6NkbevMeOq/ypIdJuuYKGADHnXFlbH8e7DfUE9CXxG8qOOFQdqgw==;EndpointSuffix=core.windows.net",
+    "container_name" : "legacy-data-raw-synced",
+    "output_file_name" : "model_1_output",
+    "extraction_config": 
+    [
+        {
+            "file_name":"map_points.zip",
+            "extraction_method":"input_points"
+        },
+        {
+            "file_name":"GeopolyLOWLAND.zip",
+            "extraction_method":"position",	
+            "features":	["ROCKCLASS","EON_P","ERA_P"],
+            "new_features":["group_rocktype","eon_p","era_p"]
+        },
+        {
+            "file_name":"GRAVONT.tif",
+            "extraction_method":"position",	
+            "new_features":["gravont"]
+        },
+        {
+            "file_name":"MAGONT_1.tif",
+            "extraction_method":"position",	
+            "new_features":["magont_1"]
+        },
+        {
+            "file_name":"ONGRAVITY.tif",
+            "extraction_method":"position",	
+            "new_features":["ongravity"]
+        },
+        {
+            "file_name":"ONGRV1VD.tif",
+            "extraction_method":"position",	
+            "new_features":["ongrv1vd"]
+        },
+        {
+            "file_name":"ONMAG1VD.tif",
+            "extraction_method":"position",	
+            "new_features":["onmago1vd"]
+        },
+        {
+            "file_name":"ONMAGONL.tif",
+            "extraction_method":"position",	
+            "new_features":["onmagonl"]
+        },
+        {
+            "file_name":"FLTSUPG_NAD83.zip",
+            "extraction_method":"distance",	
+            "features":	["ENGDESC","distance"],
+            "new_features":["engdesc","dist_2_engdesc"]
+        },
+        {
+            "file_name":"CAN_MagmaticNi_Prospectivity.zip",
+            "extraction_method":"distance",	
+            "features":	["Seis_MOHO_","distance"],
+            "new_features":["seis_moho","dist_2_crust_thick"]
+        },
+        {
+            "file_name":"GeolinesLOWLAND.zip",
+            "feature_filter":"FEATURE",	
+            "remove_cat":["CONTACT, GEOPHYSICAL, TREND, INTERPRETED;CONTACT, OUTCROP/DRIFT, INTERPRETED","CONTACT, SHARP, TREND, INTERPRETED;CONTACT, SHARP, TREND, OBSERVED","ONTARIO BORDER;NEATLINE"],
+            "extraction_method":"distance",	
+            "features":	["FEATURE","distance"],
+            "new_features":["fault_type","dist_2_faults"]
+        },
+        {
+            "file_name":"GeolinesLOWLAND.zip",
+            "feature_filter":"FEATURE",	
+            "remove_cat":["FAULT, DEXTRAL HORIZONTAL COMPONENT, TREND, INTERPRETED, UNKNOWN GENERATION","FAULT, PROJECTED FAULT, INTERPRETED, UNKNOWN GENERATION","FAULT, SINISTRAL HORIZONTAL COMPONENT, TREND, INTERPRETED, UNKNOWN GENERATION","FAULT, SINISTRAL HORIZONTAL COMPONENT, TREND, OBSERVED, UNKNOWN GENERATION","FAULT, UNKNOWN HORIZONTAL COMPONENT, INCLINED-REVERSE, INTERPRETED, UNKNOWN GENERATION","FAULT, UNKNOWN HORIZONTAL COMPONENT, INCLINED-REVERSE, OBSERVED, UNKNOWN GENERATION","FAULT, UNKNOWN HORIZONTAL COMPONENT, TREND, INTERPRETED, UNKNOWN GENERATION","FAULT, UNKNOWN HORIZONTAL COMPONENT, TREND, OBSERVED, UNKNOWN GENERATION","NEATLINE;ONTARIO BORDER"],
+            "extraction_method":"distance",	
+            "features":	["FEATURE","distance"],
+            "new_features":["geoline_type","dist_2_geolines"]
+        }
+    ],
+    "new_feature_mask":{
+        "feature": "group_rocktype",
+        "text": "mafic",
+        "labels": ["barren", "fertile"]
+        }
+}

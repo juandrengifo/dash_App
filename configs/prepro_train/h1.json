@@ -1,0 +1,22 @@
+{
+    "ds_name":"dataset1",
+    "ds_version": 2,
+    "experiment": "test",
+    "target": "mafic",
+    "oversample": 1,
+    "undersample":1,
+    "model_name": "h1_ds1v1_e",
+    "train": 1,
+    "remove":["group_rocktype", "longitud(m)", "latitude(m)"],
+    "discard": [],
+    "ensemble": 1,
+    "thresh":100,
+    "time_left_for_this_task": 30,
+    "subscription_id": "755b224d-5144-4359-b618-f62b1efb1c57",
+    "resource_group": "AUAZE-CORP-DEV-EXPLORATIONAI",
+    "workspace_name": "DevAIMLWorkspace",
+    "exp_name": "h1",
+    "description": "Model for mineral-barren classification.",
+
+    "tags": {"area":"Rocktype", "type":"Classification", "Hypothesis":"1"}
+}

@@ -1,0 +1,22 @@
+{
+    "connection_string":"DefaultEndpointsProtocol=https;AccountName=devaimlstgacc;AccountKey=ygVXw+tz/YwUsEZaUhyLTUic9c+gALo/KS6NkbevMeOq/ypIdJuuYKGADHnXFlbH8e7DfUE9CXxG8qOOFQdqgw==;EndpointSuffix=core.windows.net",
+    "container_name":"legacy-data-raw-synced",
+    "ds_file": "h1OntarioDataset-Jan-12-2022.csv",
+    "target": "grouped_rocktype_p",
+    "model" : "models/model_h2.sav",
+    "X_test" : "data/X_test_h2.sav",
+    "X_train" : "data/X_train_h2.sav",
+    "X_preprocess" : "data/X_preprocess_h2.sav",
+    "y" : "data/y_h2.sav",
+    "y_test" : "data/y_test_h2.sav",
+    "y_train" : "data/y_train_h2.sav",
+    "cm": "figs/cm.png",
+    "categories": [
+        "felsic",
+        "intermediate",
+        "mafic",
+        "mafic sills",
+        "mafic ultramafic",
+        "sedimentary"
+    ]
+}

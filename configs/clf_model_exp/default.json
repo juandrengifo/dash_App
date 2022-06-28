@@ -1,0 +1,16 @@
+{
+    "connection_string":"DefaultEndpointsProtocol=https;AccountName=devaimlstgacc;AccountKey=ygVXw+tz/YwUsEZaUhyLTUic9c+gALo/KS6NkbevMeOq/ypIdJuuYKGADHnXFlbH8e7DfUE9CXxG8qOOFQdqgw==;EndpointSuffix=core.windows.net",
+    "container_name":"legacy-data-raw-synced",
+    "ds_file": "model_1_output.csv",
+    "target": "mafic",
+    "model" : "models/model_h3.sav",
+    "X": "data/X_h3.sav",
+    "X_test" : "data/X_test_h3.sav",
+    "X_train" : "data/X_train_h3.sav",
+    "X_preprocess" : "data/X_preprocess_h3.sav",
+    "y" : "data/y_h3.sav",
+    "y_test" : "data/y_test_h3.sav",
+    "y_train" : "data/y_train_h3.sav",
+    "cm": "cm.png",
+    "categories": ["barren","fertile"]
+}

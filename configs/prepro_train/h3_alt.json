@@ -1,0 +1,20 @@
+{
+    "ds_name":"dataset2",
+    "ds_version": 1,
+    "experiment": "Hypothesis3",
+    "target": "mafic",
+    "balance": 1,
+    "model_name": "h3_d2v1_e",
+    "remove": ["cMUMrt", "dist_dxf", "dist_all_faults_1", "age", "dist_subprov_b_1", "dist_major_faults_1", "distance_age", "dxf_layer", "subprov", "fault_class", "elements", "dist_cMUMrt", "cMUMrc", "dist_cMUMrc", "cInMUMrt", "dist_cInMUMrt", "cInMUMrc", "dist_cInMUMrc",  "group_rocktype", "rocktype", "longitud(m)", "latitude(m)"],
+    "discard": [],
+    "ensemble": 1,
+    "area": "Rocktype",
+    "type": "Classification",
+    "time_left_for_this_task": 1000,
+    "subscription_id": "755b224d-5144-4359-b618-f62b1efb1c57",
+    "resource_group": "AUAZE-CORP-DEV-EXPLORATIONAI",
+    "workspace_name": "DevAIMLWorkspace",
+    "exp_name": "h3",
+    "description": "Model for fertile-barren classification.",
+    "tags": {"area":"Rocktype", "type":"Classification", "Hypothesis":"3"}
+}

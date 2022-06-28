@@ -1,0 +1,25 @@
+{
+    "connection_string" : "DefaultEndpointsProtocol=https;AccountName=devaimlstgacc;AccountKey=ygVXw+tz/YwUsEZaUhyLTUic9c+gALo/KS6NkbevMeOq/ypIdJuuYKGADHnXFlbH8e7DfUE9CXxG8qOOFQdqgw==;EndpointSuffix=core.windows.net",
+    "container_name" : "legacy-data-raw-synced",
+    "layers":
+    [
+        {
+            "file_name": "9_TOPVMAP_BND_POLBND_A_ontario_reproj.zip",
+            "process": 
+            {
+                "name": "points_region",
+                "meters_by_unit": 32,
+                "reso_meters": 250
+            }
+        },
+        {
+            "file_name": "GeopolyLOWLAND.zip",
+            "process": 
+            {
+                "name": "borders",
+                "feature_name": "ROCKCLASS"
+            }
+        }
+
+    ]
+}

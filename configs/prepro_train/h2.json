@@ -1,0 +1,20 @@
+{
+    "target": "group_rocktype",
+    "ds_name": "dataset1",
+    "ds_version": 2,
+    "oversample":1,
+    "undersample":1,
+    "balance": 1,
+    "model_name": "h2_d1v2_e",
+    "tags":{"area": "Rocktype", "type": "classification", "Hypothesis":"2"},
+    "experiment": "Hypothesis2",
+    "remove": ["longitud(m)", "mafic", "latitude(m)", "onmago1vd_3", "onmago1vd_1", "ongravity_1"],
+    "discard": ["carbonatite", "paleozoic", "mafic dikes", "mafic-ultramafic intrusive", "mafic intrusive", "ultramafic", "tectonite","lake","unknown","felsic-intermediate", "sudbury complex","mafic-felsic","gneiss"],
+    "ensemble": 1,
+    "time_left_for_this_task": 3600,
+    "subscription_id": "755b224d-5144-4359-b618-f62b1efb1c57",
+    "resource_group": "AUAZE-CORP-DEV-EXPLORATIONAI",
+    "workspace_name": "DevAIMLWorkspace",
+    "exp_name": "h2",
+    "description": "Model for rocktype classification."
+}

@@ -1,0 +1,14 @@
+{
+    "categories":["felsic",
+        "intermediate",
+        "mafic",
+        "mafic sills",
+        "mafic ultramafic",
+        "sedimentary"],
+    "algorithm":"Ensemble model (RF+XGB)",
+    "model" : "models/model_h2.sav",
+    "X": "data/X.sav",
+    "X_preprocess" : "data/X_preprocss_h2.sav",
+    "provinces_file": "data/CAN_ADM1.shp.zip",
+    "target": "grouped_rocktype_p"
+}

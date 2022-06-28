@@ -1,0 +1,19 @@
+{
+    "ds_name":"dataset2",
+    "ds_version": 1,
+    "experiment": "Hypothesis3",
+    "target": "mafic",
+    "balance": 1,
+    "model_name": "h3_d2v1",
+    "train": 1,
+    "remove": [ "group_rocktype", "rocktype", "longitud(m)", "latitude(m)"],
+    "discard": [],
+    "ensemble": 1,
+    "time_left_for_this_task": 1500,
+    "subscription_id": "755b224d-5144-4359-b618-f62b1efb1c57",
+    "resource_group": "AUAZE-CORP-DEV-EXPLORATIONAI",
+    "workspace_name": "DevAIMLWorkspace",
+    "exp_name": "h3",
+    "description": "Model for fertile-barren classification.",
+    "tags": {"area":"Rocktype", "type":"Classification", "Hypothesis":"3"}
+}

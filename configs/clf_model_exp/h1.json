@@ -1,0 +1,21 @@
+{
+    "subscription_id": "755b224d-5144-4359-b618-f62b1efb1c57",
+    "resource_group": "AUAZE-CORP-DEV-EXPLORATIONAI",
+    "workspace_name": "DevAIMLWorkspace",
+    "ds_name":"dataset1",
+    "version": 1,
+    "output":"output_model_h1_model",   
+    "target": "grouped_rocktype_p",
+    "model" : "models/model_h1.sav",
+    "X_test" : "data/X_test_h1.sav",
+    "X_train" : "data/X_train_h1.sav",
+    "X_preprocess" : "data/X_preprocess_h1.sav",
+    "y" : "data/y_h1.sav",
+    "y_test" : "data/y_test_h1.sav",
+    "y_train" : "data/y_train_h1.sav",
+    "cm": "figs/cm1.png",
+    "categories": [
+        "Barren",
+        "Mineral"
+    ]
+}

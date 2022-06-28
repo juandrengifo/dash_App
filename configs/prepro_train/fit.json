@@ -1,0 +1,7 @@
+{
+    "model" : "model_h1.sav",
+    "X": "X1.sav",
+    "X_preprocess" : "X_preprocess_h1.sav",
+    "categories": ["barren", "fertile"],
+    "target": "mafic"
+}
