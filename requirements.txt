@@ -116,7 +116,7 @@ ml-wrappers==0.1.0
 mlflow==1.26.1
 msal==1.18.0
 msal-extensions==0.3.1
-msrest==0.7.1
+msrest>=0.6.21
 msrestazure==0.6.4
 munch==2.5.0
 munkres==1.1.4
