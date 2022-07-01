@@ -46,6 +46,7 @@ jobs:
           pip install -r requirements.txt
           pip install azure_storage_blob
           pip install azureml-core
+          pip install numpy
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
