@@ -34,11 +34,10 @@ jobs:
           sudo add-apt-repository ppa:ubuntugis/ppa
           sudo apt-get update
           sudo apt-get install gdal-bin
-          echo ogrinfo --version
           sudo apt-get install libgdal-dev
           export CPLUS_INCLUDE_PATH=/usr/include/gdal
           export C_INCLUDE_PATH=/usr/include/gdal
-          pip install GDAL==3.3.2
+          pip install GDAL== ogrinfo --version
       
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -48,7 +47,7 @@ jobs:
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
         with:
-          name: python-app
+          name: app.py
           path: |
             . 
             !venv/
@@ -64,13 +63,13 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
-          name: python-app
+          name: app.py
           path: .
           
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'trainboard'
+          app-name: 'app.py'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5B60B276D5434932BAED5D341BD3F1DF }}
