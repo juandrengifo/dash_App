@@ -47,6 +47,8 @@ jobs:
           pip install azure_storage_blob
           pip install azureml-core
           pip install numpy
+          pip install interpret-community
+          pip install shap
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
