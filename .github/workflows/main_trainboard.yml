@@ -41,6 +41,7 @@ jobs:
           pip install -U setuptools
           pip install ruamel.yaml
           pip install azure_storage_blob
+          pip install azureml-core
       
       - name: Install dependencies
         run: pip install -r requirements.txt
