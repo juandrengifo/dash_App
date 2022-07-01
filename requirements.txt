@@ -23,7 +23,7 @@ azureml-dataprep==4.0.4
 azureml-dataprep-native==38.0.0
 azureml-dataprep-rslex==2.6.3
 azureml-dataset-runtime==1.42.0
-azureml-interpret==1.43.0
+azureml-interpret
 backcall==0.2.0
 backports.tempfile==1.0
 backports.weakref==1.0.post1
