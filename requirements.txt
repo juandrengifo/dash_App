@@ -8,7 +8,7 @@ argon2-cffi-bindings==21.2.0
 asttokens==2.0.5
 attrs==21.4.0
 azure-common==1.1.28
-azure-core==1.22.1
+azure-core==1.23.1
 azure-graphrbac==0.61.1
 azure-identity==1.7.0
 azure-mgmt-authorization==2.0.0
