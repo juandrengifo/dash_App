@@ -40,11 +40,12 @@ jobs:
           pip install GDAL==3.3.2
           pip install -U setuptools
           pip install ruamel.yaml
-          pip install azure_storage_blob
-          pip install azureml-core
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install azure_storage_blob
+          pip install azureml-core
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
